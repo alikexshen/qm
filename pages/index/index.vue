@@ -1,12 +1,14 @@
 <template>
 	<view class="content">
 		<hx-navbar :back="false" :backgroundColorLinearDeg='90' :backgroundColor="[[71,204,160],[0,117,113]]" >
-			<view class="out fz24 pl50" slot="right">
+			<view class="out fz26 pl50" slot="right">
 				退出
 			</view>
 		</hx-navbar>
-		<view class="topcont">
-			vjdj
+		<view class="topWrap">
+			<view class="topcont">
+				hh
+			</view>
 		</view>
 	</view>
 </template>
@@ -34,6 +36,10 @@
 		width: 100%;
 		.out{
 			color:#fff;
+		}
+		.topWrap{
+			border-radius: 0 0 50upx 50upx;
+			overflow: hidden;
 		}
 		.topcont{
 			height: 310upx;
