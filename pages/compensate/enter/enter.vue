@@ -21,7 +21,7 @@
         </picker>
       </view>
     </view>
-    <button class="btn-submit" @click="onSubmit">立即申请</button>
+    <view :class="['btn-submit',{disabled:submitEnable}]" @click="onSubmit">立即申请</view>
   </view>
 </template>
 
@@ -42,6 +42,11 @@
           focus: false,
         },
       };
+    },
+    computed: {
+      submitEnable() {
+        return !this.name.value || !this.phone.value
+      }
     },
     methods: {
       onSubmit() {
@@ -117,10 +122,17 @@
   }
 
   .btn-submit {
+    height: 96upx;
+    line-height: 96upx;
+    text-align: center;
     font-size: 34upx;
     color: #FFFFFF;
     background-color: #47CCA0;
     border-radius: 100upx;
     margin: 60upx 30upx 0;
+
+    &.disabled {
+      background-color: #CCCCCC;
+    }
   }
 </style>
