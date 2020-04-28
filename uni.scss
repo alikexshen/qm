@@ -76,7 +76,13 @@ $uni-color-paragraph: #3F536E; // 文章段落颜色
 $uni-font-size-paragraph:30rpx;
 
 
-
+@font-face {
+    font-family: iconfont;
+    src: url('~@/static/font/iconfont.ttf');
+}
+.iconfont {
+    font-family: iconfont;
+}
 
 @for $i from 12 through 80
 {
