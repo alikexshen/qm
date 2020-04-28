@@ -1,21 +1,29 @@
 {
-	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
-		{
-			"path": "pages/index/index",
-			"style": {
-				"navigationStyle":"custom"
-				
-			}
-		}
-	    ,{
-            "path" : "pages/login",
-            "style" : {}
-        }
-    ],
-	"globalStyle": {
-		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8"
-	}
+  "pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+    {
+      "path": "pages/index/index",
+      "style": {
+        "navigationBarTitleText": "uni-app"
+      }
+    },
+    {
+      "path": "pages/compensate/enter/enter",
+      "style": {
+        "navigationBarTitleText": "添加赔偿"
+      }
+    }
+  ],
+  "condition": { //模式配置，仅开发期间生效
+    "current": 0, //当前激活的模式（list 的索引项）
+    "list": [{
+      "name": "johnny-home-page", //模式名称
+      "path": "pages/compensate/enter/enter" //启动页面，必选
+    }]
+  },
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "backgroundColor": "#F8F8F8"
+  }
 }

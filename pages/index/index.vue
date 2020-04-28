@@ -14,21 +14,23 @@
 </template>
 
 <script>
-	import hxNavbar from "@/components/hx-navbar/hx-navbar.vue"
-	export default {
-		components: {hxNavbar},
-		data() {
-			return {
-				title: 'Hello'
-			}
-		},
-		onLoad() {
+  import hxNavbar from "@/components/hx-navbar/hx-navbar.vue"
+  export default {
+    components: {
+      hxNavbar
+    },
+    data() {
+      return {
+        title: 'Hello'
+      }
+    },
+    onLoad() {
 
-		},
-		methods: {
+    },
+    methods: {
 
-		}
-	}
+    }
+  }
 </script>
 
 <style lang="scss" scoped>
@@ -47,6 +49,14 @@
 			background:linear-gradient(90deg,rgba(71,204,160,1) 0%,rgba(0,117,113,1) 100%);
 		}
 	}
+    .out {
+      color: #fff;
+    }
 
-	
+    .topcont {
+      height: 310upx;
+      width: 100%;
+      background: linear-gradient(90deg, rgba(71, 204, 160, 1) 0%, rgba(0, 117, 113, 1) 100%);
+    }
+  
 </style>
